@@ -1,6 +1,10 @@
 # Jawyn Web Application 🔍
 
-Aplicativo Web criado com [Deno JavaScript Runtime](https://deno.com/) e o [Web Framework Fresh](https://fresh.deno.dev/) com objetivo de criar um motor de busca baseado no modelo [Latent Dirichlet Allocation](https://pt.wikipedia.org/wiki/Aloca%C3%A7%C3%A3o_latente_de_Dirichlet) para o site do [Wikipédia](https://www.wikipedia.org/). Esse projeto foi criado com fim de apresentar o trabalho e para obtenção de nota na matéria de Cálculo III do curso Bacharelado em Ciência da Computação na Fundação Universidade Federal de Rondônia.
+![Jawn Icon](https://github.com/jawyn-project/web/blob/main/static/favicon.ico) 
+
+Web application created with Deno JavaScript Runtime and the Web Framework Fresh with the objective of creating a search engine based on the Latent Dirichlet Allocation model for the Wikipedia website. This project was created in order to present the work and obtain a grade in the Calculus III subject of the Bachelor's degree in Computer Science at the Fundação Universidade Federal de Rondônia.
+
+[![Made with Fresh](https://fresh.deno.dev/fresh-badge-dark.svg)](https://fresh.deno.dev)
 
 ### Usage
 
