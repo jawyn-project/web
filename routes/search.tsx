@@ -2,6 +2,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { Navbar } from "../components/Navbar.tsx";
 import { SearchBar } from "../components/SearchBar.tsx";
 
+// interfaces to get the response pattern of LDA API
 interface Documents {
     results: Document[]
 }
@@ -12,6 +13,7 @@ interface Document {
     content: string
 }
 
+// static documents only to test the application without use the LDA API
 const documents: Documents = 
     { results: [
         {
@@ -40,6 +42,7 @@ const documents: Documents =
 
 export const handler: Handlers<Documents> = {
 
+    // GET method to fetch the LDA API given a URL params of the query
     GET(req, ctx) {
         
         // get the url's params
@@ -54,6 +57,7 @@ export const handler: Handlers<Documents> = {
         return ctx.render(documents);
     },
 
+    // POST method to get the query and send to /search route for fetch the LDA API
     async POST(req, ctx) {
 
         const form = await req.formData()

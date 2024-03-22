@@ -3,8 +3,11 @@ import { Handlers } from "$fresh/server.ts";
 import { Navbar } from "../components/Navbar.tsx";
 import { SearchBar } from "../components/SearchBar.tsx";
 
+// index.tsx: main page of the web application
+
 export const handler: Handlers = {
-  
+
+  // POST method to get the query and send to /search route for fetch the LDA API
   async POST(req, ctx) {
 
     const form = await req.formData()
